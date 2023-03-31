@@ -1,4 +1,17 @@
 package game.rpg.graphics;
 
-public class GameWindow {
+import javax.swing.*;
+
+public class GameWindow extends JFrame {
+
+    public GameWindow(GamePanel gamePanel) {
+        setSize(600, 600);
+
+        add(gamePanel);
+
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
+    }
 }

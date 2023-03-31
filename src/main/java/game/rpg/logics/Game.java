@@ -1,9 +1,16 @@
 package game.rpg.logics;
 
+import game.rpg.graphics.GamePanel;
+import game.rpg.graphics.GameWindow;
+
 public class Game {
 
+    private GameWindow gameWindow;
+    private GamePanel gamePanel;
+
     public Game() {
-        System.out.println("Call with Game constructor.");
+        gamePanel = new GamePanel();
+        gameWindow = new GameWindow(gamePanel);
     }
 
 }
