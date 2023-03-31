@@ -1,5 +1,7 @@
 package game.rpg.graphics;
 
+import game.rpg.logics.KeyboardInputs;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -7,7 +9,7 @@ public class GamePanel extends JPanel {
 
     public GamePanel() {
 
-
+        addKeyListener(new KeyboardInputs());
 
     }
 
